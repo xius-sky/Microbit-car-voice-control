@@ -546,6 +546,8 @@ function stopListening() {
   log('Stopped listening')
 }
 
+ 
+
 function processVoice(text) {
   for (const [kw, cmd] of Object.entries(CMDS)) {
     if (text.includes(kw)) {
